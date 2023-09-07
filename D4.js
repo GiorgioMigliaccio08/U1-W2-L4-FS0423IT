@@ -113,7 +113,7 @@ console.log(upperFirst("hello world"));
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(stringa4) {}
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
