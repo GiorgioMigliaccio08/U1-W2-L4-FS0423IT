@@ -103,9 +103,14 @@ console.log(reverseString("EPICODE"));
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-function upperFirst(stringa1) {
-  return stringa1.split("");
-}
+const upperFirst = function (stringa1) {
+  let result = "";
+  const arrayOfWords = stringa1.split("");
+  for (let i = 0; i < arrayOfWords.lenght; i++) {
+    arrayOfWords[i].slice(0, 1).toUppercase() + arrayOfWords[i].slice(1) + "";
+  }
+  return result;
+};
 console.log(upperFirst("hello world"));
 
 /* ESERCIZIO 9
@@ -113,7 +118,13 @@ console.log(upperFirst("hello world"));
  della stringa originale.
 */
 
-function cutString(stringa4) {}
+const cutString = function (str) {
+  let result;
+  result = str.slice(1);
+  result = result.slice(0, result.lenght - 1);
+  return result;
+};
+console.log(cutString("EPICODE"));
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
